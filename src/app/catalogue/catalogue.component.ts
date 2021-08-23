@@ -10,6 +10,8 @@ export class CatalogueComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    
   }
 
 }
