@@ -15,14 +15,16 @@ import {Router} from '@angular/router'
     
   }
 
-  handleLogin(event: Event): void  {
+ 
+
+  onSubmit(event: any): void  {
     //if("username" !== ''){
     if(true){  
     localStorage.clear();
-      localStorage.setItem('username', "username");
+      localStorage.setItem('username', event.target.username.value);
       this.route.navigate(['/catalogue'])
     }
-    console.log("loggin in" + event)
+    console.log("loggin in")
   }
 
 }

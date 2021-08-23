@@ -1,2 +1,4 @@
-<input type="text" name="login" id="login">
-<button (click)="handleLogin($event)">login</button>
+<form (submit)="onSubmit($event)">
+<input type="text" name="username" id="username">
+<button type="submit">login</button>
+</form>
