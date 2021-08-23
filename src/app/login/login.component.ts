@@ -12,7 +12,7 @@ import {Router} from '@angular/router'
   constructor(private route:Router) { }
 
   ngOnInit(): void {
-    if(!localStorage.getItem("username")) {
+    if(localStorage.getItem("username")) {
       this.route.navigate(['/catalogue'])
     }
   }

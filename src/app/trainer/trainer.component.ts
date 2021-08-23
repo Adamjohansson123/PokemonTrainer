@@ -8,12 +8,20 @@ import {Router} from '@angular/router'
 })
 export class TrainerComponent implements OnInit {
 
+  _pokemons: string[] = [];
+
   constructor(private route:Router) { }
 
   ngOnInit(): void {
     if(!localStorage.getItem("username")) {
       this.route.navigate(['/'])
     }
+
+    this._pokemons = JSON.parse(JSON.stringify(localStorage.getItem("pokemons")))?.split(",");
+  }
+
+  get pokemons(): string[]{
+    return this._pokemons;
   }
 
 }
