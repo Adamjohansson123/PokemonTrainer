@@ -18,13 +18,13 @@ import {Router} from '@angular/router'
  
 
   onSubmit(event: any): void  {
-    //if("username" !== ''){
-    if(true){  
+    if(event.target.username.value !== ''){
     localStorage.clear();
       localStorage.setItem('username', event.target.username.value);
       this.route.navigate(['/catalogue'])
+    }else{
+      alert("username must contain text")
     }
-    console.log("loggin in")
   }
 
 }
