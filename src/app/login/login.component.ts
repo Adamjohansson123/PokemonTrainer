@@ -12,10 +12,10 @@ import {Router} from '@angular/router'
   constructor(private route:Router) { }
 
   ngOnInit(): void {
-    
+    if(!localStorage.getItem("username")) {
+      this.route.navigate(['/catalogue'])
+    }
   }
-
- 
 
   onSubmit(event: any): void  {
     if(event.target.username.value !== ''){
