@@ -3,7 +3,7 @@
 <ul>
     <li *ngFor="let pokemon of pokemons">
         {{pokemon.name}} <button (click)="catchPokemon(pokemon.name)">catch</button>
-        <img [src]="pokemonImage(pokemon.name)"/>
+        <img [src]="pokemon.sprites.front_default"/>
     </li>
 
 </ul>

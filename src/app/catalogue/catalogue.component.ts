@@ -21,7 +21,7 @@ export class CatalogueComponent implements OnInit {
     this.pokemonService.fetchPokemons();
   }
 
-  get pokemons(): Pokemon[] {
+  get pokemons(): any[] {
     return this.pokemonService.pokemons();
   }
 
