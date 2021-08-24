@@ -23,8 +23,13 @@ export class NavbarComponent implements OnInit {
   }
 
   logOut(): void {
-    localStorage.clear();
-    this.router.navigate(['/'])
+    let confirmAction = confirm("Are you sure you want to log out? \n All pokemons will released into the wild again.");
+    if (confirmAction) {
+      localStorage.clear();
+      this.router.navigate(['/'])
+    } else {
+      
+    }
   }
 
 }
