@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router'
+import { Router } from '@angular/router'
 
 
 @Component({
@@ -12,6 +12,9 @@ export class NavbarComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    if (!localStorage.getItem("username")) {
+      this.router.navigate(['/'])
+    }
   }
 
   goToTrainer(): void {
@@ -23,12 +26,12 @@ export class NavbarComponent implements OnInit {
   }
 
   logOut(): void {
-    let confirmAction = confirm("Are you sure you want to log out? \nAll pokemons will released into the wild again.");
+    let confirmAction = confirm("Are you sure you want to log out?\nAll pokemons will released into the wild again.");
     if (confirmAction) {
       localStorage.clear();
       this.router.navigate(['/'])
     } else {
-      
+
     }
   }
 

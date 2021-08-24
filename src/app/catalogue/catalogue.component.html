@@ -3,33 +3,32 @@
 <div class="wrapper">
     <div *ngFor="let pokemon of pokemons">
 
-        <div class="pokemon-card-container {{pokemon.types[0].type.name}}">
+        <div class="pokemon-card-container {{pokemon.types[0].type.name}}" (click)="catchPokemon(pokemon.name)">
             <div class="pokemon-card {{pokemon.types[0].type.name}}">
                 <div class="background">
                     <img [src]="pokemon.sprites.front_default" class="image" />
+                    <div class="caughtPokemonImagePosition">
+                        <img class="caughtPokemonImage" *ngIf="caughtPokemons.includes(pokemon.name)"
+                            src="../../../assets/images/pokeball.png" />
+                    </div>
                 </div>
-
             </div>
 
             <div class="{{pokemon.types[0].type.name}}">
                 <div class="content">
-                <div class="pokemon-name">{{pokemon.name}}</div>
-                <span class="pokemon-type">{{pokemon.types[0].type.name}}</span>
+                    <div class="pokemon-name">{{pokemon.name}}</div>
+                    <span class="pokemon-type">{{pokemon.types[0].type.name}}</span>
 
-                <div class="pokemon-stats">
-                    <p>Attack: {{pokemon.stats[1].base_stat}}</p>
-                    <p>Defence: {{pokemon.stats[2].base_stat}}</p>
-                    <p>Hp: {{pokemon.stats[0].base_stat}}</p>
-                    <p>Speed: {{pokemon.stats[5].base_stat}}</p>             
+                    <div class="pokemon-stats">
+                        <p>Attack: {{pokemon.stats[1].base_stat}}</p>
+                        <p>Defence: {{pokemon.stats[2].base_stat}}</p>
+                        <p>Hp: {{pokemon.stats[0].base_stat}}</p>
+                        <p>Speed: {{pokemon.stats[5].base_stat}}</p>
+                    </div>
                 </div>
-            </div>
 
             </div>
 
-        </div>
-
-        <div class="btnContainer">
-            <button class="pokemon-btn {{pokemon.types[0].type.name}}" (click)="catchPokemon(pokemon.name)">Catch</button>
         </div>
 
     </div>

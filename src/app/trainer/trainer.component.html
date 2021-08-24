@@ -1,13 +1,16 @@
 <app-navbar></app-navbar>
+<h2 class="trainerTitle">YOUR POKÉMON COLLECTION</h2>
+<div class="noPokemonsCaughtTxt" *ngIf="!pokemons">You haven´t caught any pokemons yet!</div>
+
 <div class="wrapper">
     <div *ngFor="let pokemon of pokemons">
         <div class="pokemonCard">
             <div>
                 <img class="pokemonCardImg" src="../../../assets/images/pokeball.png" alt="">
-                
+
             </div>
             <diV class="pokemonCardTxt">
-               {{pokemon}}
+                {{pokemon}}
             </diV>
         </div>
 

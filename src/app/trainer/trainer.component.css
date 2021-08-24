@@ -4,8 +4,17 @@
     grid-gap: 40px;
     grid-auto-rows: 200px;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 20px;
+    padding-left: 20px;
   } 
+
+  .trainerTitle {
+    letter-spacing: 1px;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
 .pokemonCard {
   background-color: white;
@@ -17,9 +26,16 @@
 }
 
 .pokemonCardTxt {
-   font-size: 20px;
-   margin-top: 15px;
-   font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.noPokemonsCaughtTxt {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .pokemonCardTxt::first-letter {
