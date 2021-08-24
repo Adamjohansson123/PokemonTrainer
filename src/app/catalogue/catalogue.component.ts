@@ -17,8 +17,6 @@ export class CatalogueComponent implements OnInit {
     if(!localStorage.getItem("username")) {
       this.router.navigate(['/'])
     }
-
-    this.pokemonService.fetchPokemons();
   }
 
   get pokemons(): any[] {
