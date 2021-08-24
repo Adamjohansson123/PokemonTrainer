@@ -1,4 +1,20 @@
-<form (submit)="onSubmit($event)">
-<input type="text" name="username" id="username">
-<button type="submit">login</button>
-</form>
+<div class="body">
+    <div class="loginContainer">
+        <h2 class="loginTxt">POKEMON TRAINER</h2>
+        <div class="imageContainer">
+            <img class="loginImage" src="../../assets/images/pokemon-trainer.png" alt="" />
+        </div>
+        
+   <form (submit)="onSubmit($event)">
+       <div>
+           <input class="loginInput" type="text" name="username" id="username" placeholder="Please enter your name...">
+       </div>
+       <div>
+           <button class="loginBtn" type="submit">LOGIN</button>
+       </div>
+
+
+</form> 
+</div>
+</div>
+

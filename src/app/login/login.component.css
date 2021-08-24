@@ -1,0 +1,52 @@
+.body {
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginContainer {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 500px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.loginTxt {
+    margin-top: 50px;
+}
+
+.loginInput {
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 50px;
+    padding: 10px;
+    width: 150px;
+}
+
+.loginImage {
+    height: 150px;
+    width: 150px;
+}
+
+.imageContainer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.loginBtn {
+    width: 20%;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.loginBtn:hover {
+    background-color: rgb(211, 211, 211);
+    cursor: pointer;
+    transition: all .5s;
+}

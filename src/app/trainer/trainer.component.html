@@ -1,6 +1,16 @@
 <app-navbar></app-navbar>
-<p>trainer works!</p>
+<div class="wrapper">
+    <div *ngFor="let pokemon of pokemons">
+        <div class="pokemonCard">
+            <div>
+                <img class="pokemonCardImg" src="../../../assets/images/pokeball.png" alt="">
+                
+            </div>
+            <diV class="pokemonCardTxt">
+               {{pokemon}}
+            </diV>
+        </div>
 
-<ul>
-    <li *ngFor="let pokemon of pokemons">{{pokemon}}</li>
-</ul>
+
+    </div>
+</div>

@@ -1,0 +1,32 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 40px;
+    grid-auto-rows: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+  } 
+
+.pokemonCard {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  height: 160px;
+  text-align: center;
+  width: 200px;
+}
+
+.pokemonCardTxt {
+   font-size: 20px;
+   margin-top: 15px;
+   font-weight: bold;
+}
+
+.pokemonCardTxt::first-letter {
+   text-transform: uppercase;
+}
+
+.pokemonCardImg{
+    height:70px;
+    margin-top: 20px;
+  }

@@ -1,6 +1,6 @@
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: auto auto auto;
     grid-auto-rows: 450px;
     font-family: Arial, Helvetica, sans-serif;
   } 
@@ -11,7 +11,8 @@
 }
 
 .pokemon-card-container {
-  margin-left: 50px;
+  margin-left: auto;
+  margin-right: auto;
   background: linear-gradient(to right, #83eec5, #3a9594);
   width: 300px;
   height: 350px;
@@ -84,6 +85,11 @@ div::first-letter, span::first-letter {
   border: 0px solid black;
   font-weight: bold;
   font-size: 15px;
+}
+
+.pokemon-btn:hover{
+  cursor: pointer;
+  transition: all .5s;
 }
 
 .btnContainer {
