@@ -8,7 +8,7 @@ import { CatalogueComponent } from './catalogue/catalogue.component';
 import { TrainerComponent } from './trainer/trainer.component';
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
+  { path: '/', component: LoginComponent },
   { path: 'catalogue', component: CatalogueComponent },
   { path: 'trainer', component: TrainerComponent }
 ];
