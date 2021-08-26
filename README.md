@@ -2,6 +2,22 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
 
+## Link
+
+https://experis-pokemon-trainer.herokuapp.com
+
+### Login page
+
+A page where you login to the application.
+
+#### Catalogue page
+
+A page where all pokemons from the original pokemon game (151 pokemons) are shown to the user and the user can catch pokemons by clicking on them.
+
+### Trainer page
+
+A page where you can see all the pokemons that you have caught.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
