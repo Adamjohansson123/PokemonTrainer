@@ -146,7 +146,6 @@ div::first-letter, span::first-letter {
   background: linear-gradient(45deg, rgba(255, 230, 240, 1) 0%, rgba(255, 197, 224, 1) 34%, rgba(255, 166, 185, 1) 71%, rgba(255, 138, 149, 1) 100%);
 }
 
-
 .card__image-container {
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
