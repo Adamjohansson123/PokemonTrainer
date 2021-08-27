@@ -1,20 +1,18 @@
 # PokemonTrainer
 
+Link to the application deployed on Heroku: https://experis-pokemon-trainer.herokuapp.com
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
 
-## Link
-
-https://experis-pokemon-trainer.herokuapp.com
-
-### Login page
+## Login page
 
 A page where you login to the application.
 
-#### Catalogue page
+## Catalogue page
 
 A page where all pokemons from the original pokemon game (151 pokemons) are shown to the user and the user can catch pokemons by clicking on them.
 
-### Trainer page
+## Trainer page
 
 A page where you can see all the pokemons that you have caught.
 
